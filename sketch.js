@@ -1,17 +1,24 @@
-// example code - draws an ornament
-
-var ornamentImage;
-
 function setup() {
+	// create a place to draw
 	createCanvas(640, 360);
-	ornamentImage = loadImage("images/ornament.png");
+	noStroke();
+
 }
 
 function draw() {
-	background(50, 50, 50);
-	fill(100, 0, 0);
-	stroke(0, 100, 100);
-	strokeWeight(60);
-	ellipse(320, 180, 200, 200);
-	image(ornamentImage, 320 - ornamentImage.width * 0.5, 180 - ornamentImage.height * 0.5);
+	// clear the background
+	background(17, 29, 77);
+
+//draw grass
+fill (30,127,43);
+rect(0, 270, 900, 400);
+
+//draw trees
+fill(30,69,16);
+triangle(230, 275, 258, 220, 286, 275);
+triangle(230, 275, 258, 220, 286, 275);
+
+
+
+
 }
